@@ -10,6 +10,10 @@ public class TestClass {
         int age = scanner.nextInt();
         scanner.nextLine();
         String pesel = scanner.nextLine();
+        createPerson(firstName, lastName, age, pesel);
+
+    }
+    public static Person createPerson(String firstName, String lastName, int age, String pesel) {
         Person person = null;
         try {
             person = new Person(firstName, lastName, age, pesel);
@@ -19,5 +23,6 @@ public class TestClass {
             System.err.println(e.getMessage());
         }
         System.out.println(person.toString());
+        return person;
     }
 }
