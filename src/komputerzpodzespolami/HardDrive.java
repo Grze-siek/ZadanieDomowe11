@@ -11,8 +11,8 @@ public class HardDrive extends Component {
     @Override
     public String toString() {
         //super(modelName, producerName, serialNumber);
-        return "HardDrive{" +
-                "capacity=" + capacity +
+        return "HardDrive" + super.toString() +
+                ", capacity=" + capacity +
                 "GB}";
     }
 }

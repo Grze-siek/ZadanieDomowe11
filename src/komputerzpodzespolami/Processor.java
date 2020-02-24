@@ -24,9 +24,7 @@ public class Processor extends Component {
 
     @Override
     public String toString() {
-        //super(modelName, producerName, serialNumber);
-        return "Processor{" +
-                "timing =" + timing +
+        return  "Procesor " + super.toString() + ", timing =" + timing +
                 "MHz, timingTemperature =" + timingTemperature +
                 ", maxTimingTemperature =" + maxTimingTemperature +
                 '}';

@@ -28,7 +28,7 @@ public class RAMMemory extends Component {
     @Override
     public String toString() {
        // super(modelName, producerName, serialNumber);
-        return "RAMMemory{" +
+        return "RAMMemory " + super.toString() + "{" +
                 "memoryQuantity=" + memoryQuantity +
                 "MB, timing=" + timing +
                 "MHz, timingTemperature=" + timingTemperature +

@@ -13,10 +13,9 @@ public abstract class Component extends Computer{
 
     @Override
     public String toString() {
-        return "Component{" +
+        return  "{" +
                 "modelName ='" + modelName + '\'' +
                 ", producerName ='" + producerName + '\'' +
-                ", serialNumber ='" + serialNumber + '\'' +
-                '}';
+                ", serialNumber ='" + serialNumber + '\'';
     }
 }
