@@ -14,11 +14,12 @@ public class Person {
 
         int firstNameLength = firstName.length();
         int lastNameLength = lastName.length();
-        if(firstName == null || lastName == null || firstNameLength < 2 || lastNameLength < 2)
+        if(firstNameLength < 2 || lastNameLength < 2) {
             throw new NameUndefinedException("Napis jest nullem lub ma mniej niz dwa znaki");
-
-        if(age < 1)
+        }
+        if(age < 1) {
             throw new IncorrectAgeException("Podany wiek jest za mały!");
+        }
     }
 
 
